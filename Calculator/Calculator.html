@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="Calculator.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,700;1,600&display=swap" rel="stylesheet">
+    <!-- Font -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- github icon -->
+</head>
+
+<body>
+    
+    <nav id="nav">
+
+        <h1>Simple
+            <h1 id="ionic">Cosmic</h1>
+        <h1>Calculator</h1>
+        </h1>
+       <a href="https://github.com/Mhanyoe" target="_blank">
+        <img src="./bxl-github.png" class="github" alt="My github profile">
+         </a>
+      </nav>
+  
+
+    <div class="container">
+        <div class="calculator">
+            <form>
+                <div class="display">
+                    <input type="text" name="display">
+                </div>
+                <div>
+                    <input type="button" value="AC" onclick="display.value = '' " class="special-op">
+                    <input type="button" value="DE" onclick="display.value = display.value.toString().slice(0,-1) " class="op">
+                    <input type="button" value="." onclick="display.value += '.' " class="op">
+                    <input type="button" value="/" onclick="display.value += '/' " class="op">
+                </div>
+                <div>
+                    <input type="button" value="7" onclick="display.value += '7' " class="num">
+                    <input type="button" value="8" onclick="display.value += '8' " class="num">
+                    <input type="button" value="9" onclick="display.value += '9' " class="num">
+                    <input type="button" value="*" onclick="display.value += '*' " class="op">
+                </div>
+                <div>
+                    <input type="button" value="4" onclick="display.value += '4' " class="num">
+                    <input type="button" value="5" onclick="display.value += '5' " class="num">
+                    <input type="button" value="6" onclick="display.value += '6' " class="num">
+                    <input type="button" value="+" onclick="display.value += '+' " class="op">
+                </div>
+                <div>
+                    <input type="button" value="1" onclick="display.value += '1' " class="num">
+                    <input type="button" value="2" onclick="display.value += '2' " class="num">
+                    <input type="button" value="3" onclick="display.value += '3' " class="num">
+                    <input type="button" value="-" onclick="display.value += '-' " class="op">
+                </div>
+                <div>
+                    <input type="button" value="00" onclick="display.value += '00' " class="num">
+                    <input type="button" value="0" onclick="display.value += '0' " class="num">
+                    <input type="button" value="=" onclick="display.value = eval(display.value) " class="equal op">
+
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>
